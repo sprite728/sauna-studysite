@@ -138,7 +138,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(/img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url( {{ "/img/reef-bg-dark.png" | prepend: site.baseurl }} ) no-repeat bottom center scroll;
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -256,13 +256,28 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(/img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url( {{ "/img/downloads-bg.jpg" | prepend: site.baseurl }} ) no-repeat center center scroll;
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+
+#about {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url( {{ "/img/about.png" | prepend: site.baseurl }} ) no-repeat center center scroll;
+    background-size: auto 100%;
+    background-color: {{ site.color.primary-dark }};
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 
 #map {
     width: 100%;
